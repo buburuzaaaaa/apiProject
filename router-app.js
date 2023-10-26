@@ -4,17 +4,17 @@ require('./db/connect')
 const app = express()
 const connectDB = require('./db/connect')
 // const people =  require('./public/routes/people-controller')
-const auth = require('./routes/auth')
+const fortune = require('./routes/fortune')
 
 //static assests
 //parse form data
 app.use(express.urlencoded({extended: false}))
 //parse json data
+app.use(express.static('./public'))
 
 app.use(express.json())
 //routes/router
-app.use('/api', auth)
-app.use(express.static('./public'))
+app.use('/api/fortune', fortune)
 
 // app.use('/api/people', people)
 
@@ -25,15 +25,6 @@ app.use(express.static('./public'))
 
 
 
-const initServer = async () =>{
-    try {
-await connectDB(process.env.MONGO_URI)
-        app.listen(7000, () =>{
+app.listen(7000, () =>{
             console.log('listening on port 7000')
         })
-    } catch (error) {
-        console.error(error)
-    }
-}
-
-initServer()
