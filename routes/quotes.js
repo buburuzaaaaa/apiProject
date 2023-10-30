@@ -2,15 +2,19 @@ const express = require('express');
 require('dotenv').config;
 const router = express.Router();
 const axios = require('axios');
+
 const options = {
   method: 'GET',
-  url: 'https://fortune-cookie2.p.rapidapi.com/fortune',
+  url: 'https://quotes-by-api-ninjas.p.rapidapi.com/v1/quotes',
+  params: {
+    category: 'inspirational',
+  },
   headers: {
     'X-RapidAPI-Key': process.env.API_KEY,
-    'X-RapidAPI-Host': 'fortune-cookie2.p.rapidapi.com',
+    'X-RapidAPI-Host': 'quotes-by-api-ninjas.p.rapidapi.com',
   },
 };
-router.get('/getCookie', async (req, res) => {
+router.get('/getQuote', async (req, res) => {
   try {
     const response = await axios.request(options);
     res.json(response.data);
