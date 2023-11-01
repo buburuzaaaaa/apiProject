@@ -1,4 +1,24 @@
-#vid{
-    height: 100px;
-    width: 100px;
+.video {
+    background-color: blueviolet;
+    width: 10rem;
+    height: 4rem;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
 }
+
+.vid {
+    text-align: center;
+}
+
+.trn {
+    text-align: center;
+
+}
+
+#vid {
+    border-radius: 1rem;
+    height: 500px;
+    width: 500px;
+}
+

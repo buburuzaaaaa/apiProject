@@ -1,0 +1,47 @@
+.navbar {
+    background-color: #22333b;
+    overflow: hidden;
+    border: solid black .5rem;
+    height: 4rem;
+    border-radius: 1rem;
+    float: left;
+    width: 99%;
+    margin-top: 0px;
+}
+
+/* Style for the navigation bar buttons */
+.navbar a {
+    margin: 0 1rem 0 1rem;
+    display: flex;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: .2rem;
+    /* background-color: blueviolet; */
+    justify-content: space-evenly;
+    margin-top: 1px;
+}
+body {
+    background-color: #22333b;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* text-align: center; */
+}
+.bn {
+    border-radius: .5rem;
+    border: .1rem black solid;
+    border: none;
+    background-color: #22333b;
+    color: white;
+    text-align: center;
+    background-color: blueviolet;
+    /* text-align: center; */
+    height: 3rem;
+    margin-top: .4rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-left: 1rem;
+}

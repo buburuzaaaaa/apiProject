@@ -1,9 +1,4 @@
-body{
-    background-color: #22333b;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* text-align: center; */
-}
+
 h1{
     font-size: 4rem;
     text-align: center;
@@ -27,33 +22,11 @@ button{
     text-align: center;
 }
 
+.gen {
+    color: blueviolet;
+}
 /* Style for the navigation bar */
-.navbar {
-    background-color: #22333b;
-    overflow: hidden;
-    border: solid black .5rem;
-    height: 4rem;
-    border-radius: 1rem;
-    float: left;
-    width: 99%;
-    margin-top: 0px;
-}
 
-/* Style for the navigation bar buttons */
-.navbar a {
-    margin: 0 1rem 0 1rem;
-    display: flex;
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    border-radius: .2rem;
-    /* background-color: blueviolet; */
-    justify-content: space-evenly;
-    margin-top: 1px;
-}
 
 /* Style for the navigation bar buttons on hover */
 /* .navbar a:hover {
@@ -62,36 +35,5 @@ button{
     
 } */
 
-.bn{
-    background-color: blueviolet;
-    /* text-align: center; */
-    height: 3rem;
-    margin-top: .4rem;
-    font-size: 1rem;
-    font-weight: bolder;
-    margin-left: 1rem;
-}
 
-.video{
-    background-color: blueviolet;
-    width: 10rem;
-    height: 4rem;
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-}
 
-.vid{
-    text-align: center;
-}
-
-.trn{
-    text-align: center;
-    
-}
-#vid{
-    border-radius: 1rem;
-}
-.gen{
-    color: blueviolet;
-}
