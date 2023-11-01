@@ -38,6 +38,8 @@ p{
     object-fit: cover;
     background-color: rgb(138, 43, 226);
     z-index: 1;
+    background-image: url(./imgs/noah.png);
+    background-size: cover;
 }
 .trn::after{
     display: block;
