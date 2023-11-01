@@ -3,12 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+
+    <link rel="stylesheet" href="quotes.css">
+    <title>Quotes</title>
 </head>
 <body>
-    <h1>GEt a quote</h1>
-    <button onclick="quote()">Qutoe</button>
-    <p>Quot</p>
+    <div class="navbar">
+        <button class="bn"><a href="./home.html">Home</a></button>
+        <button class="bn"><a href="./quotes.html">Quotes</a></button>
+        <h1>Quotes</h1>
+        <button class="bn"><a href="./fort.html">Fortune</a></button>
+        <button class="bn"><a href="./index.html">Read Me</a></button>
+    </div>
+    <h1>Click on Sun Tzu for your quote</h1>
+    <div class="flexer"><div class="img"><button onclick="quote()"><img src="./imgs/suntzu.jpg" alt=""></button></div>
+    
+    <p>Quote</p></div>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
     <script src="quotes.js"></script>
 </body>
