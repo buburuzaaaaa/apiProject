@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  type="text/css" href="/home.css">
+    <!-- <link rel="stylesheet"  type="text/css" href="/home.css"> -->
+    <link rel="stylesheet" href="./fort.css">
     <title>Fortune</title>
 </head>
 <body>
-    <h1>TEST YOUR FORTUNE + quotes</h1>
-    <button onclick="vidToggle()">Stop</button>
-    <video src="" id="vid" muted autoplay playsinline></video>
+    <div class="navbar">
+        <button class="bn"><a href="./home.html">Home</a></button>  
+        <button class="bn"><a href="./quotes.html">quotes</a></button>  
+        <button class="bn"><a href="./fort.html">Fortune</a></button>  
+      </div>
+    <h1>TEST YOUR FORTUNE + QUOTES</h1>
+   <div class="vid"><button onclick="vidToggle()" class="video">webcam</button></div>
+    <br>
+    <div class="trn"><video src="" id="vid" muted autoplay playsinline></video></div>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
     integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
     crossorigin="anonymous"></script>
