@@ -1,9 +1,7 @@
 const express = require('express');
 const path = require('path');
 require('dotenv').config();
-require('./db/connect');
 const app = express();
-const connectDB = require('./db/connect');
 // const people =  require('./public/routes/people-controller')
 const fortune = require('./routes/fortune');
 const quotes = require('./routes/quotes');
